@@ -28,7 +28,7 @@ impl<const N: usize> Deref for Choice<N> {
 
 /// 1 out of N oblivious transfer send of length L
 pub trait OTSend<const N: usize, const L: usize> {
-    fn send(&self, messages: &[&[u8; L]; N]) -> Result<()>;
+    fn send(&self, messages: &[[u8; L]; N]) -> Result<()>;
 }
 
 /// 1 out of N oblivious transfer receive of length L

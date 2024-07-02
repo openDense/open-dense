@@ -12,5 +12,4 @@ pub trait SSServer<const T: usize, const N: usize, F: FiniteField> {
     fn recover(&self, shares: &[Option<F>; N]) -> Result<F>;
 }
 
-pub mod additive;
 pub mod functionality;

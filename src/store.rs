@@ -11,7 +11,7 @@ use std::{error::Error, vec};
 /// use dense::store::{Store, disk::DiskStore};
 /// let mut store = DiskStore::new("data/Alice", "test").unwrap();
 /// let write = vec![1, 2, 3, 4, 5];
-/// store.set("test_data", write).unwrap();
+/// store.set("test_data", &write).unwrap();
 /// let read = store.get::<Vec<i32>>("test_data").unwrap();
 /// println!("{:?}", read);
 /// ```
