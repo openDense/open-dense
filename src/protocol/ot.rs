@@ -36,5 +36,6 @@ pub trait OTReceive<const N: usize, const L: usize> {
     fn receive(&self, choice: &Choice<N>) -> Result<[u8; L]>;
 }
 
-pub mod np01;
+pub mod co15;
 pub mod functionality;
+pub mod np01;
