@@ -1,7 +1,6 @@
 //! manages the interaction with datastore.
 //! To use, choose a specialized Store struct and `open` with appropriate store config.
-//! Then use `get` and `set` to operate with the datastore.
-//! Finally `close` the store.
+//! Use `get` and `set` to operate with the datastore.
 
 use std::{error::Error, vec};
 
